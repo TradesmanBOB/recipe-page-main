@@ -23,6 +23,69 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Stone-100);
+
+}
+
+main {
+    background-color: var(--White);
+    margin-top: 10rem;
+    border-radius: 0.5rem;
+}
+
+h2 {
+    color: var(--Brown-800);
+}
+
+.OmeletteImage {
+    margin: 2rem;
+}
+
+.PreparationBox {
+    background-color: var(--Rose-50);
+    margin: 2em 2rem;
+    padding: 2rem 0rem;
+}
+
+.PreparationTitle {
+    color: var(--Rose-800);
+    margin-left: 2rem;
+}
+
+.PreparationContent {
+    margin: 0rem 2.5rem;
+    padding-top: 0.5rem;
+} 
+
+.PreparationItem {
+    padding-top: 1rem;
+}
+
+.IngredientsList-div {
+    margin: 0rem 2.5rem;
+    padding-top: 0.5rem;
+} 
+
+.IngredientsItem {
+    padding-top: 1rem;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.MakeBrown {
+    color: var(--Brown-800);
+}
+
 .attribution { font-size: 5px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
