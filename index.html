@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Recipe page</title>
 
@@ -13,64 +18,81 @@
 
 <body>
   <main>
-    <div class="OmeletteImage">
-      <img src="./assets/images/image-omelette.jpeg" alt="Featured Omelette image">
-    </div>
-    <div class="title/description">
-      <h1 class="Title">Simple Omelette Recipe</h1>
-      <p>An easy and quick dish, perfect for any meal.
-         This classic omelette combines beaten eggs cooked to perfection,
-        optionally filled with your choice of cheese, vegetables, or meats.</p>
-    </div>
-    <div class="PreparationBox">
-      <h2 class="PreparationTitle">Preparation Time</h2>
-
-      <ul class="PreparationContent">
-        <li class="PreparationItem">Total: Approximately 10 minutes</li>
-        <li class="PreparationItem">Preparation: 5 minutes</li>
-        <li class="PreparationItem">Cooking: 5 minutes</li>
-      </ul>
-    </div>
-    <br>
-    <div class="IngredientsList-div">
-      <ul class="IngredientsList">
-        <h2 class="IngredientsTitle">Ingredients</h2>
-
-        <li class="IngredientsItem">2-2 large eggs</li>
-        <li class="IngredientsItem">Salt, to taste</li>
-        <li class="IngredientsItem">Pepper, to taste</li>
-        <li class="IngredientsItem">1 tablespoon of butter or oil</li>
-        <li class="IngredientsItem">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-      </ul>
-    </div>
-    <div class="InstructionList">
-      <h2 class="InstructionTitle">Instructions</h2>
-      <ol type="1" class="numbered-container">
-        <li>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+    <div class="Main">
+      <img class="OmeletteImage" src="./assets/images/image-omelette.jpeg" alt="Featured Omelette image">
+      <div class="title-description">
+        <h1 class="Title">Simple Omelette Recipe</h1>
+        <p class="descriptionText">An easy and quick dish, perfect for any meal.
+         This classic omelette combines beaten eggs <br> cooked to perfection,
+          optionally filled with your choice of cheese, vegetables, or meats.</p>
+      </div>
+      <div class="PreparationBox">
+        <h2 class="PreparationTitle">Preparation Time</h2>
+        <ul class="PreparationContent">
+          <li class="PreparationItem"><span class="MakeBold">Total:</span> Approximately 10 minutes</li>
+          <li class="PreparationItem"><span class="MakeBold">Preparation:</span> 5 minutes</li>
+          <li class="PreparationItem"><span class="MakeBold">Cooking:</span> 5 minutes</li>
+        </ul>
+      </div>
+  <br>
+      <div class="IngredientsList-div, GoldText">
+        <ul class="IngredientsList">
+          <h2 class="IngredientsTitle">Ingredients</h2>
+          <li class="IngredientsItem">2-2 large eggs</li>
+          <li class="IngredientsItem">Salt, to taste</li>
+          <li class="IngredientsItem">Pepper, to taste</li>
+          <li class="IngredientsItem">1 tablespoon of butter or oil</li>
+          <li class="IngredientsItem">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+      </div>
+  <div class="divider"></div>
+      <div class="InstructionList">
+        <h2 class="InstructionTitle, GoldText">Instructions</h2>
+        <ol type="1" class="numbered-container">
+          <li class="numbered-list"><span class="MakeBold">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
           You can add a tablespoon of water or milk for a fluffier texture.</li>
-        <li> Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</li>
-        <li>Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+          <li class="numbered-list"><span class="MakeBold">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+          <li class="numbered-list"><span class="MakeBold">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
           the eggs evenly coat the surface.</li>
-        <li>Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
+          <li class="numbered-list"><span class="MakeBold">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the 
           middle, sprinkle your chosen fillings over one half of the omelette.</li>
-        <li> Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
+          <li class="numbered-list"><span class="MakeBold">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
           fillings. Let it cook for another minute, then slide it onto a plate.</li>
-        <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
-      </ol>
-    </div>
-    <div class="Nutrition">
-      <h2>Nutrition</h2>
-      <p>The table below shows nutritional values per serving without the additional fillings.</p>
-      <ul>
-        <li>Calories</li>
-        <li>277kcal</li>
-        <li>Carbs</li>
-        <li>0g</li>
-        <li>Protein</li>
-        <li>20g</li>
-        <li>Fat</li>
-        <li>22g</li>
-      </ul>
+          <li class="numbered-list"><span class="MakeBold">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+      </div>
+    <div class="divider"></div>
+      <div class="Nutrition">
+        <h2 class="GoldText">Nutrition</h2>
+        <p class="nutrition-description">The table below shows nutritional values per serving without the additional fillings.</p>
+        <div class="nutrition-table">
+          <div class="nutrition-card">
+            <p class="macro-p">Calories</p>
+            <p class="GoldText, MakeBold">277kcal</p>
+          </div>
+        </div>
+    <div class="divider"></div>
+        <div class="nutrition-table">
+          <div class="nutrition-card">
+            <p class="macro-p">Carbs</p>
+            <p class="MakeGold, MakeBold">0g</p>
+          </div>
+        </div>
+    <div class="divider"></div>
+        <div class="nutrition-table">
+          <div class="nutrition-card">
+            <p class="macro-p">Protein</p>
+            <p class="MakeGold, MakeBold">20g</p>
+          </div>
+        </div>
+    <div class="divider"></div>
+        <div class="nutrition-table">
+          <div class="nutrition-card">
+            <p class="macro-p">Fat</p>
+            <p class="MakeGold, MakeBold">22g</p>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <!-- <div class="attribution">
