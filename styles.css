@@ -105,6 +105,7 @@ li::marker {
 }
 
 .numbered-list {
+    border: 2px solid red;
     margin: 1rem 1.25rem;
 }
 
